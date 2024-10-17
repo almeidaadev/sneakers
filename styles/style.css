@@ -211,20 +211,26 @@ main.container .wrapper {
 }
 
 .company {
-    font-size: 12px;
-    letter-spacing: 1px;
-    color: #b3b3b3;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    line-height: auto;
+
+    color: #69707d;
 }
 
 .product-title {
-    font-size: 24px;
+    color: #1d2026;
+    font-size: 44px;
     font-weight: bold;
+    line-height: 48px;
     margin: 10px 0;
 }
 
 .description {
-    font-size: 14px;
-    color: #666;
+    font-size: 16px;
+    color: #69707d;
+    line-height: 26px;
     margin-bottom: 20px;
 }
 
@@ -235,22 +241,31 @@ main.container .wrapper {
 }
 
 .price-section .current-price {
+    color: #1d2026;
     font-size: 28px;
     font-weight: bold;
 }
 
 .price-section .discount {
-    background-color: #fdd835;
+    background-color: #1d2026;
     color: white;
-    padding: 5px;
-    font-size: 14px;
-    border-radius: 5px;
+
+    text-align: center;
+
+    height: 27px;
+    width: 51px;
+
+    padding-top: 3px;
+    font-size: 16px;
+    border-radius: 6px;
 }
 
 .old-price {
-    font-size: 14px;
-    color: #b3b3b3;
+    font-size: 16px;
+    color: #69707d;
     text-decoration: line-through;
+    line-height: 26px;
+    font-weight: bold;
 }
 
 .quantity-section {
@@ -263,22 +278,27 @@ main.container .wrapper {
 .quantity-selector {
     display: flex;
     align-items: center;
+    justify-content: space-around;
     background-color: #f2f2f2;
     border-radius: 10px;
-    padding: 10px;
+    /* padding: 10px; */
+    width: 157px;
+    height: 56px;
 }
 
 .quantity-selector button {
     background-color: transparent;
     border: none;
-    font-size: 18px;
+    font-size: 25px;
+    
     cursor: pointer;
-    padding: 0 10px;
-    color: #ff7d1a;
+    color: #ff7e1b;
+
 }
 
 .quantity-selector span {
     font-size: 18px;
+    font-weight: bold;
     padding: 0 10px;
 }
 
@@ -286,13 +306,16 @@ main.container .wrapper {
     background-color: #ff7d1a;
     color: #1d2026;
     border: none;
-    padding: 15px 30px;
     font-size: 16px;
     border-radius: 10px;
     cursor: pointer;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 10px;
+
+    width: 272px;
+    height: 56px;
 
     &:hover {
         background: #ffab6a;

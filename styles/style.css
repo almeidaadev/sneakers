@@ -11,7 +11,7 @@
 }
 
 .wrapper {
-    max-width: 1440px;
+    max-width: 1100px;
     margin: 0 auto;
 }
 
@@ -140,6 +140,42 @@ header > .wrapper > .right-header > .cart > span {
     display: none;
 }
 
+.overlay-img {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #000000;
+    opacity: 75%;
+    z-index: 9;
+}
+
+.test-con {
+    position: fixed;
+    z-index: 9999;
+    /* left: calc(1440px - 75%); */
+    top: 90px;
+    width: 90vw;
+    flex-direction: column;
+}
+
+.main-img {
+    position: relative;
+}
+
+.test-con .close {
+    position: absolute;
+    right: 0;
+    top: -30px;
+    cursor: pointer;
+    color: #ffffffff;
+
+    &:hover {
+        color: #ff7e1b;
+    }
+}
+
 .menu ul {
     padding: 0 24px;
     margin-top: 100px;
@@ -193,6 +229,35 @@ main.container .wrapper {
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+.container-show-img {
+    display: none;
+}
+
+@media (width <= 850px) {
+    .container-sneaker {
+        flex-direction: column;
+    }
+
+    .container-sneaker .right {
+        margin-top: 2rem;
+    }
+
+    .price-group {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .container-quantity .quantity-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-quantity .quantity-section .quantity-selector {
+        width: 272px;
+    }
 }
 
 .more-img {
@@ -290,10 +355,9 @@ main.container .wrapper {
     background-color: transparent;
     border: none;
     font-size: 25px;
-    
+
     cursor: pointer;
     color: #ff7e1b;
-
 }
 
 .quantity-selector span {
@@ -354,9 +418,10 @@ main.container .wrapper {
 .products-cart {
     color: #69707d;
     overflow-y: auto;
-    max-height: calc(100% - 90px);
+    max-height: 100%;
+    /* max-height: calc(100% - 90px); */
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     gap: 1rem;
 
     &::-webkit-scrollbar {
@@ -408,6 +473,7 @@ h2 {
     font-weight: bold;
     line-height: auto;
     border-radius: 10px;
+    display: none;
 }
 
 .cart span {

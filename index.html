@@ -66,21 +66,43 @@
                     <img src="assets/header/cart.svg" alt="carrinho">
                     <span>0</span>
                 </div>
+
                 <div class="profile">
                     <a href="/">
                         <img src="assets/header/Oval.svg" alt="perfil">
                     </a>
                 </div>
+                
             </div>
         </div>
     </header>
 
     <main class="container">
         <div class="wrapper">
+            <div class="container-show-img">
+                <div class="overlay-img"></div>
+
+                <div class="test-con center">
+                    <div class="main-img">
+                        <div class="close">x</div>
+                        <img src="/assets/sneakers/Rectangle.png">
+                    </div>
+
+                    <div class="more-img">
+                        <img src="/assets/sneakers/Rectangle Copy.png">
+                        <img src="/assets/sneakers/Rectangle Copy 2.png">
+                        <img src="/assets/sneakers/Rectangle Copy 3.png">
+                        <img src="/assets/sneakers/Rectangle Copy 4.png">
+                    </div>
+                </div>
+            </div>
+
+
             <div class="container-sneaker">
                 <div class="left">
                     <div class="main-img">
-                        <img src="">
+                        <!-- src vazio pq estou carregando dinamicamente pelo js apenas test -->
+                        <img src="/assets/sneakers/Rectangle.png">
                     </div>
 
                     <div class="more-img">
@@ -100,21 +122,29 @@
                             These low-profile sneakers are your perfect casual wear companion. Featuring a durable
                             rubber outer sole, they'll withstand everything the weather can offer.
                         </div>
-                        <div class="price-section">
-                            <div class="current-price">$125.00</div>
-                            <div class="discount">50%</div>
-                        </div>
-                        <div class="old-price">$250.00</div>
-                        <div class="quantity-section">
-                            <div class="quantity-selector">
-                                <button id="menos">-</button>
-                                <span id="value">0</span>
-                                <button id="mais">+</button>
+                        <div class="container-price">
+                            <div class="price-group">
+                                <div class="price-section">
+                                    <div class="current-price">$125.00</div>
+                                    <div class="discount">50%</div>
+                                </div>
+                                <div class="old-price">$250.00</div>
                             </div>
-                            <button class="add-to-cart-btn">
-                                <img src="/assets/header/darkCart.svg" alt="Cart" width="20">
-                                Add to cart
-                            </button>
+
+                            <div class="container-quantity">
+                                <div class="quantity-section">
+                                    <div class="quantity-selector">
+                                        <button id="menos">-</button>
+                                        <span id="value">0</span>
+                                        <button id="mais">+</button>
+                                    </div>
+
+                                    <button class="add-to-cart-btn">
+                                        <img src="/assets/header/darkCart.svg" alt="Cart" width="20">
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

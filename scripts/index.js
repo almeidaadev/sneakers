@@ -65,9 +65,25 @@ const loadImgs = () => {
         "/assets/sneakers/Rectangle Copy 4.png",
     ];
 
+    const containerSneaker = document.querySelectorAll(
+        ".container-sneaker .left img"
+    );
+
+    const containerShowImg = document.querySelector(".container-show-img");
+
+    containerSneaker.forEach((img) => {
+        img.addEventListener("click", () => {
+            containerShowImg.style.display = "block";
+        });
+    });
+
     moreImg.forEach((img) => {
         img.addEventListener("click", () => {
             const actuallyImg = img.src;
+
+            if (!actuallyImg) {
+                console.log("Não existe o src da imagem");
+            }
 
             mainImg.src = actuallyImg;
         });
@@ -95,6 +111,10 @@ const createProduct = (value, quant, finalValue) => {
 
     div.className = "test";
 
+    const test = document.querySelector(".checkout-button");
+
+    test.style.display = "block";
+
     const deleteItem = div.querySelector(".delete");
 
     deleteItem.addEventListener("click", deleteProduct);
@@ -113,7 +133,7 @@ const cartEmpty = () => {
         productsCart.style.display = "none";
     } else {
         cartEmpty.style.display = "none";
-        productsCart.style.display = "block";
+        productsCart.style.display = "flex";
     }
 
     console.log(productsCartLen);
@@ -165,8 +185,18 @@ const deleteProduct = (e) => {
     cartEmpty();
 };
 
+const closeShowImg = () => {
+    const close = document.querySelector(".container-show-img .close");
+    const containerShowImg = document.querySelector(".container-show-img");
+
+    close.addEventListener("click", () => {
+        containerShowImg.style.display = "none";
+    });
+};
+
 addProduct();
 loadImgs();
 showMenu();
 showCart();
 cartEmpty();
+closeShowImg();

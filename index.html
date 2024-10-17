@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="scripts/index.js" defer></script>
+    <link rel="stylesheet" href="styles/style.css">
+
+    <title>Sneakers</title>
+</head>
+
+<body>
+    <header class="container">
+        <div class="container-menu">
+            <div class="overlay"></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">Collections</a></li>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <div class="left-header center">
+
+                <div class="open-menu center">
+                    <img src="/assets/menu/burger-menu.svg" alt="menu">
+                </div>
+
+                <div class="close-menu center">
+                    <img src="/assets/menu/close-menu.svg" alt="close">
+                </div>
+
+                <div class="logo center">
+                    <img src="/assets/header/sneakers.svg" alt="logo">
+                </div>
+                <ul>
+                    <li><a href="#">Collections</a></li>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="right-header center">
+                <div class="cart-container">
+                    <h2>Cart</h2>
+
+                    <div class="cart-empty">
+                        <p>Your cart is empty.</p>
+                    </div>
+
+                    <div class="products-cart">
+                        <button class="checkout-button">Checkout</button>
+                    </div>
+                </div>
+
+                <div class="cart">
+                    <img src="assets/header/cart.svg" alt="carrinho">
+                    <span>0</span>
+                </div>
+                <div class="profile">
+                    <a href="/">
+                        <img src="assets/header/Oval.svg" alt="perfil">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="wrapper">
+            <div class="container-sneaker">
+                <div class="left">
+                    <div class="main-img">
+                        <img src="">
+                    </div>
+
+                    <div class="more-img">
+                        <img src="/assets/sneakers/Rectangle Copy.png">
+                        <img src="/assets/sneakers/Rectangle Copy 2.png">
+                        <img src="/assets/sneakers/Rectangle Copy 3.png">
+                        <img src="/assets/sneakers/Rectangle Copy 4.png">
+                    </div>
+
+                </div>
+
+                <div class="right">
+                    <div class="product-card">
+                        <div class="company">SNEAKER COMPANY</div>
+                        <div class="product-title">Fall Limited Edition Sneakers</div>
+                        <div class="description">
+                            These low-profile sneakers are your perfect casual wear companion. Featuring a durable
+                            rubber outer sole, they'll withstand everything the weather can offer.
+                        </div>
+                        <div class="price-section">
+                            <div class="current-price">$125.00</div>
+                            <div class="discount">50%</div>
+                        </div>
+                        <div class="old-price">$250.00</div>
+                        <div class="quantity-section">
+                            <div class="quantity-selector">
+                                <button id="menos">-</button>
+                                <span id="value">0</span>
+                                <button id="mais">+</button>
+                            </div>
+                            <button class="add-to-cart-btn">
+                                <img src="/assets/header/darkCart.svg" alt="Cart" width="20">
+                                Add to cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
